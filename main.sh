@@ -1,17 +1,15 @@
 #!/bin/bash
 
-source users.sh # Импортируем функцию
+source users.sh
 source processes.sh
 source help.sh
 source utils.sh
 
-# Проверка аргументов
 if [[ $# -eq 0 ]]; then
  echo "Не указаны аргументы. Используйте -h или --help для справки."
  exit 1
 fi
 
-# Обработка аргументов
 while [[ $# -gt 0 ]]; do
  case "$1" in
   -u|--users)
@@ -37,7 +35,6 @@ while [[ $# -gt 0 ]]; do
  esac
 done
 
-# Выполнение заданного действия
 if [[ "$1" == "-u" || "$1" == "--users" ]]; then
  users_func "$@"
 elif [[ "$1" == "-p" || "$1" == "--processes" ]]; then
