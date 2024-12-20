@@ -1,0 +1,3 @@
+/home/ded/Документы/5/build/CMakeFiles/ConsoleUtility.dir
+/home/ded/Документы/5/build/CMakeFiles/edit_cache.dir
+/home/ded/Документы/5/build/CMakeFiles/rebuild_cache.dir
